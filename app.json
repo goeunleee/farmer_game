@@ -22,7 +22,7 @@
 			}
 		},
 		"web": {
-			"favicon": "./assets/fav.svg"
+			"favicon": "./assets/favicon.png"
 		}
 	}
 }
