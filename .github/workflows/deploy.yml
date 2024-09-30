@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,7 +17,7 @@ jobs:
         run: npm install
 
       - name: Build the project
-        run: npm run build:web
+        run: npx expo export:web
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
